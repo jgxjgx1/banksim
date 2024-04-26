@@ -1,0 +1,10 @@
+backend/node_modules/
+bank-automat/build/
+bank-automat/*.user
+bank-automatSoundImplementation/*.user
+bank-automatSoundImplementation/build/
+bank-automat/DLL_RFID/DLL_RFID.pro.user
+bank-automat/DLL_RFID/build/
+
+bank-automat/withdraw_main_debug/build/
+bank-automat/withdraw_main_debug/*.user

@@ -1,0 +1,10 @@
+SQL_SERVER='mysql://user:@127.0.0.1/atm'
+PORT=XXXX
+MY_TOKEN = oA++dDVTwok86o6hk4BcfCN4l92VdYX5HAfM2cVPn7ZfCObeCm9/43oDQp3PnAWXHbUh9aYsn2AZvIEUMtbh0Q==
+
+
+
+#HOST="127.0.0.1"
+#DATABASE="atm"
+#USER="bankuser"
+#PASSWORD="bankpassword"
