@@ -44,6 +44,7 @@ void MainMenu::setWebToken(const QByteArray &newWebToken)
 
 void MainMenu::on_btn_logout_clicked()
 {
+    soundObj.playSound(4);
     logOut_clicked = 1;
     qDebug()<<"logout btn";
 

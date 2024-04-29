@@ -49,6 +49,7 @@ void MainWindow::backTo_waitCardInsert()
     disconnect(pQTimer);
     delete pQTimer;
     waitCardInsert();
+    this->showFullScreen();
 }
 
 void MainWindow::handleInsertCardClick(QString s)
@@ -91,6 +92,7 @@ void MainWindow::updateTime()
     }
     if (elapsed_time >= TIME_LIMIT_PIN && opened_window == 1){
         // PIN syöttöikkunan ollessa auki aikaa 10s ennen kuin palataan kirjautumisnäkymään ('syötä kortti')
+        soundObj.playSound(2);
         QMessageBox msgBox;
         pinPtr->close();
         MainWindow::backTo_waitCardInsert();
@@ -104,6 +106,7 @@ void MainWindow::updateTime()
     }
     else if (elapsed_time >= TIME_LIMIT_LOGGEDIN && opened_window == 2){
         // sisäänkirjautuneena 30s aikaa ennen kuin palataan alkunäkymään; jos jotain tehdään aika resetoituu
+        soundObj.playSound(2);
         QMessageBox msgBox;
         pinPtr->close();
         MainWindow::backTo_waitCardInsert();

@@ -6,7 +6,8 @@ cardtypeui::cardtypeui(QWidget *parent) :
     ui(new Ui::cardtypeui)
 {
     ui->setupUi(this);
-    //this->showFullScreen();
+    this->showFullScreen();
+    soundObj.playSound(1);
 }
 
 cardtypeui::~cardtypeui()
